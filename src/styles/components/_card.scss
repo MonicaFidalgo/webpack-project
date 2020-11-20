@@ -1,0 +1,51 @@
+$gutter: 20px;
+
+.c-card__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    @media screen and (min-width:  768px) {
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+}
+
+.c-card__item {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(50% - 24px);
+
+    img {
+        width:100%;
+        height: auto;
+    }  
+
+    &:nth-child(odd) {
+        margin-bottom: 36px;
+    }
+
+    &:nth-child(even) {
+        margin-top: 40px;
+    }
+
+    &:not(:last-of-type) {
+        margin-right: 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: calc(25% - 24px);
+    }
+  
+}
+
+.c-card__content {
+    padding: $gutter;
+}
+
+.c-card__subtitle {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 14px;
+}

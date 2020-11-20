@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family-default;
+    color: $text-color;
+    background-color: $black;
+    @include font-size($font-size-base);
+    line-height: $line-height-base;
+    margin: 0; 
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

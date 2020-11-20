@@ -1,0 +1,24 @@
+//separators
+%o-separator {
+    width: 100%;
+}
+
+.o-separator--variant1 {
+    @extend %o-separator;
+    height: 30px;
+}
+
+.o-separator--variant2 {
+    @extend %o-separator;
+    height: 40px;
+}
+
+.o-separator--variant3 {
+    @extend %o-separator;
+    height: 50px;
+}
+
+.o-separator--variant4 {
+    @extend %o-separator;
+    height: 70px;
+}

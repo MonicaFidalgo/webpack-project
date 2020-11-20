@@ -1,0 +1,19 @@
+/*
+    What is ITCSS?
+    ITCSS stands for Inverted Triangle CSS and it helps you to organize your project CSS files
+    in such a way that you can better deal with (not always easy-to-deal with) CSS specifics
+    like global namespace, cascade and selectors specificity.
+*/
+
+
+@import './settings/_main';
+@import './mixins/_main';
+@import './generic/_main';
+@import './elements/_main';
+@import './objects/_main';
+@import './components/_main';
+@import './utilities/_main';
+
+/*!
+ * ♥ 
+ */

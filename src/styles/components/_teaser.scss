@@ -1,0 +1,40 @@
+.c-teaser {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    
+    @media screen and (min-width:  768px) {
+        justify-content: space-between;
+    }
+}
+
+.c-teaser__description,
+.c-teaser__image {
+    flex-direction: column;
+
+    @media screen and (min-width:  768px) {
+        flex: 1;
+    }
+  
+}
+
+.c-teaser__description {
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    @media screen and (min-width:  768px) {
+        max-width: 40%;
+        margin-top: 0;
+    }
+}
+
+.c-teaser__image {
+    max-width: fit-content;
+
+    img {
+        width:100%;
+        height: auto;
+    }
+}

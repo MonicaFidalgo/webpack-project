@@ -1,0 +1,49 @@
+$button-border-radius: 3px;
+$button-height: 48px;
+
+
+%o-button {
+    @include font-size($font-size-base);
+    display: inline-block;
+    padding: 11px 27px;
+    text-transform: none !important;
+    border-radius: $button-border-radius;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: $button-height;
+    width: max-content;
+    
+    &:hover:not([disabled]),
+    &[hover]{
+      opacity: 90%;
+    }
+    
+     &[disabled],
+     &.inactive,
+     &.disabled {
+      opacity: 60%;
+      pointer-events: none;
+    }
+
+    //for button tag instead of a
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  
+  .o-button-primary {
+    @extend %o-button;
+    background-color: $brand-color;
+    color: $white;
+    border: 1px solid $brand-color;
+    
+    &:active {
+      background:darken($brand-color,10%);
+    }
+    
+    &:after{
+      content: "→"
+    }
+  }
